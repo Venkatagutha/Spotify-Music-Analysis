@@ -29,7 +29,7 @@ and then filter out artists with multiple songs
 with the help of ggplot2 and its functionsI was able to
 visualise artists with multiple songs.
  
- *Key Insights*
+ **Key Insights**
  We can see Chainsmokers, Ed sheeran, Drake and Martin Garrix
  have 3 or more songs on Spotify top100 songs but is this enough 
  to say that these artis are popular? 
@@ -63,7 +63,7 @@ visualise artists with multiple songs.
  
 
  
- [4]Key Note Analysis:
+ **[4]Key Note Analysis:
  Every song has a particular key note. There are about
  12 key notes in music. with the help of a box plot I was 
  able to explain the average standings of the song based on
@@ -77,7 +77,7 @@ visualise artists with multiple songs.
  list.
 
  
- [5]Popular Artist:
+ **[5]Popular Artist:
  
  With the help of daily top 200 songs dataset I
  was able to visualise the most popular artists of the year 2017
@@ -109,7 +109,7 @@ From our above inference we found out Chainsmokers, Ed sheeran, Drake and Martin
  DJ Khaled appeared more times on the top5 list. We can clearly see that Post Malone had one
  of the best years of his career. He is definitely an artist to look out for in the future.
    
- [6] Most Common Words:
+ **[6] Most Common Words:
  
 As we know that generlly most of songs have similar or sometimes the same name.
 With text mining we can determine the most common words used to name a song.
@@ -127,7 +127,8 @@ From the word cloud we can clearly see words like lil,love,bad and gucci seemed 
 the common words used.
 
 
-[7] To understand the sentiment of the Song name, I made use of *bing lexicon* which 
+[7] **Sentiment Analysis of song names:
+To understand the sentiment of the Song name, I made use of *bing lexicon* which 
 already has a table of words and its corresponding sentiment whether it is positive
 or negative. By performing inner join with bing lexicon and pipelining the output to
 group it by sentiment. With the help of a filter I was able to visualise words with higher
