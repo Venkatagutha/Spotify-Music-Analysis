@@ -46,7 +46,7 @@ visualise artists with multiple songs.
  arguements like the method and type of the corrplot
  you require.
 
- *Key Insights*
+ **Key Insights**
  
  With this cor plot we can clearly see that valence is 
  positively related to energy, loudness and valence.
@@ -56,7 +56,7 @@ visualise artists with multiple songs.
  [3] With the help of a decision tree we can classify or rather predict
  the standings of the song based on the various features of the song.
  
-  *Key Insights*
+  **Key Insights**
  From this tree model we can see that songs that have lower key value than 3.5,
  less than 203 seconds and valence lesser than 0.68 generally end up on the top of 
  the list and songs that have a greater key value than 3.5, valence more than or 
@@ -129,14 +129,15 @@ From the word cloud we can clearly see words like lil,love,bad and gucci seemed 
 the common words used.
 
 
-[7] **Sentiment Analysis of song names:
+[7] **Sentiment Analysis of song names**
+
 To understand the sentiment of the Song name, I made use of *bing lexicon* which 
 already has a table of words and its corresponding sentiment whether it is positive
 or negative. By performing inner join with bing lexicon and pipelining the output to
 group it by sentiment. With the help of a filter I was able to visualise words with higher
 frequency and their sentiment in a bar graph.
 
-*Key Insights*
+**Key Insights**
 
 We can see that the word love has been way too many times but we can see
 negative sentiment words seemed to be more frequent than positive words.
