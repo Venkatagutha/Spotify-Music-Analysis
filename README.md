@@ -19,9 +19,54 @@ For this project I made use of 2 different datasets:
   
  I have uploaded the plots in the results file.
   
-**Visualizations**:
+ **[Key Note Analysis]**:
+ Every song has a particular key note. There are about
+ 12 key notes in music. with the help of a box plot I was 
+ able to explain the average standings of the song based on
+ the song's key note.
+ 
+ **Key Insights**
+ 
+  From the box plot we can see that songs that belong to these key notes (A#,Bb),
+ (B), (C), (C#,Dd) and (D) end up in upper half of the list and songs that belong to 
+ the key notes (E), (F), (F#,Gb) ,(G),(G#,Ab) end up in the bottom half of the top100
+ list.
 
-[1]Artists with multiple Songs
+**[Most Common Words]:**
+ 
+As we know that generlly most of songs have similar or sometimes the same name.
+With text mining we can determine the most common words used to name a song.
+I was able to do this with the help of tidy text, where we first give the required
+field as a dataframe. Inorder to find the most common words used we first devide
+the dataframe into one-token-per row(also known as tokenization) i.e one word per
+row. Later with the help of other function of dplyr library I was able to remove
+stop words( words like and,a,the,in) which generally dont make sense in a song name.
+After getting rid of the stopwords using count function of dplyr I was able to count
+the most common words used in a song name and visualised this in a word cloud.
+
+*Key Insights*
+
+From the word cloud we can clearly see words like lil,love,bad and gucci seemed to be 
+the common words used.
+
+
+**[Sentiment Analysis of song names]**
+
+To understand the sentiment of the Song name, I made use of *bing lexicon* which 
+already has a table of words and its corresponding sentiment whether it is positive
+or negative. By performing inner join with bing lexicon and pipelining the output to
+group it by sentiment. With the help of a filter I was able to visualise words with higher
+frequency and their sentiment in a bar graph.
+
+**Key Insights**
+
+We can see that the word love has been way too many times but we can see
+negative sentiment words seemed to be more frequent than positive words.
+
+
+
+
+**[Artists with multiple Songs]**
 
 First, I read the .csv file into *Spotify*
 Then with the help of pipeline('%>%') I was able to 
@@ -65,21 +110,9 @@ visualise artists with multiple songs.
  
 
  
- **[4]Key Note Analysis:
- Every song has a particular key note. There are about
- 12 key notes in music. with the help of a box plot I was 
- able to explain the average standings of the song based on
- the song's key note.
- 
- *Key Insights*
- 
-  From the box plot we can see that songs that belong to these key notes (A#,Bb),
- (B), (C), (C#,Dd) and (D) end up in upper half of the list and songs that belong to 
- the key notes (E), (F), (F#,Gb) ,(G),(G#,Ab) end up in the bottom half of the top100
- list.
 
  
- **[5]Popular Artist:
+ **[Popular Artist]:**
  
  With the help of daily top 200 songs dataset I
  was able to visualise the most popular artists of the year 2017
@@ -102,7 +135,7 @@ visualise artists with multiple songs.
    I was able to do this by converting the position into factor and then
    giving it as "fill" for aesthics function for geom_bar.
    
-*Key Insights*
+**Key Insights**
 From our above inference we found out Chainsmokers, Ed sheeran, Drake and Martin Garrix
  have 3 or more songs on Spotify top100 songs but is this enough 
  to say that these artis are popular? This bar graph gives the answer to this question, none
@@ -111,37 +144,6 @@ From our above inference we found out Chainsmokers, Ed sheeran, Drake and Martin
  DJ Khaled appeared more times on the top5 list. We can clearly see that Post Malone had one
  of the best years of his career. He is definitely an artist to look out for in the future.
    
- **[6] Most Common Words:
- 
-As we know that generlly most of songs have similar or sometimes the same name.
-With text mining we can determine the most common words used to name a song.
-I was able to do this with the help of tidy text, where we first give the required
-field as a dataframe. Inorder to find the most common words used we first devide
-the dataframe into one-token-per row(also known as tokenization) i.e one word per
-row. Later with the help of other function of dplyr library I was able to remove
-stop words( words like and,a,the,in) which generally dont make sense in a song name.
-After getting rid of the stopwords using count function of dplyr I was able to count
-the most common words used in a song name and visualised this in a word cloud.
-
-*Key Insights*
-
-From the word cloud we can clearly see words like lil,love,bad and gucci seemed to be 
-the common words used.
-
-
-[7] **Sentiment Analysis of song names**
-
-To understand the sentiment of the Song name, I made use of *bing lexicon* which 
-already has a table of words and its corresponding sentiment whether it is positive
-or negative. By performing inner join with bing lexicon and pipelining the output to
-group it by sentiment. With the help of a filter I was able to visualise words with higher
-frequency and their sentiment in a bar graph.
-
-**Key Insights**
-
-We can see that the word love has been way too many times but we can see
-negative sentiment words seemed to be more frequent than positive words.
-
 
 
 
