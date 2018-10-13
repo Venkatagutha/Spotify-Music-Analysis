@@ -1,8 +1,10 @@
 # Spotify-Music-Analysis
 THis project is about visualising popular artists and 
 providing meaningful insights about various features 
-of a song that make it to the top of the list. With the
-help of Rstudio I was able to work on the data and provide
+of a song that make it to the top of the list.Further,
+I was able to identify the most common words used for a song title
+and to understand its sentiment.
+With the help of Rstudio I was able to work on the data and provide
 useful insights.
 
 For this project I made use of 2 different datasets:
